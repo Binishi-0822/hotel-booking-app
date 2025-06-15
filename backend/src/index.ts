@@ -21,6 +21,11 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
+app.get("/", (req, res) => {
+  res.send("Hello! Your backend is working 🎉");
+});
+
+
 app.use("/api/users", userRoutes)
 app.use("/api/auth", authRoutes)
 
