@@ -9,9 +9,15 @@ import path from "path";
 
 
 // mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string);
-mongoose.connect(process.env.MONGODB_CONNECTION_STRING as string)
-  .then(() => console.log("✅ Connected to MongoDB"))
-  .catch((err) => console.error("❌ MongoDB connection error:", err));
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING!)
+  .then(() => {
+    console.log("✅ Connected to MongoDB");
+  })
+  .catch(err => {
+    console.error("❌ Failed to connect MongoDB", err);
+    process.exit(1); // Prevent starting server if DB is down
+  });
+
 
 
 const app = express();
