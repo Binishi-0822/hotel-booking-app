@@ -45,8 +45,7 @@ router.post(
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
         maxAge: 86400000,
-        sameSite: "none",
-
+        sameSite: process.env.NODE_ENV === "production" ? "none" : "lax"
       });
 
       res.status(200).json({ userId: user._id });
