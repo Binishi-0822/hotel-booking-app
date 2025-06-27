@@ -20,7 +20,7 @@ const Header = () => {
                     {
                         isLoggedIn ? <>
                             <Link to="/my-bookings" className='flex items-center text-white px-3 font-bold hover:bg-blue-900 hover:rounded-md'>My Bookings</Link>
-                            <Link to="/add-hotel" className='flex items-center text-white px-3 font-bold hover:bg-blue-900 hover:rounded-md'>My Hotels</Link>
+                            <Link to="/add-hotel" className='flex items-center text-white px-3 font-bold hover:bg-blue-900 hover:rounded-md'>Add Hotel</Link>
                             <SignOutButton/>
                         </> 
                         : <>
