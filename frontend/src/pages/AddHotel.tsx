@@ -8,7 +8,7 @@ const AddHotel = () => {
     const { showToast } = useAppContext();
     const navigate = useNavigate();
 
-    const { mutate, isLoading } = useMutation<void, Error, FormData>({
+    const { mutate} = useMutation<void, Error, FormData>({
         mutationFn: apiClient.addHotel,
         onSuccess: async () => {
             showToast({ message: "Hotel Saved!", type: "SUCCESS" });
@@ -25,7 +25,7 @@ const AddHotel = () => {
 
     return (
         <div>
-            <ManageHotelForm onSave={handleSave} isLoading={isLoading} />
+            <ManageHotelForm onSave={handleSave}/>
         </div>
     );
 }
