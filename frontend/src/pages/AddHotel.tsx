@@ -14,7 +14,7 @@ const AddHotel = () => {
             showToast({ message: "Hotel Saved!", type: "SUCCESS" });
             navigate("/");
         },
-        onError: (error: Error) => {
+        onError: () => {
             showToast({ message: "Error saving hotel", type: "ERROR" });
         }
     });
