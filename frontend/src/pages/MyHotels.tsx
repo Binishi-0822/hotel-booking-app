@@ -62,8 +62,10 @@ const MyHotels = () => {
             className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-lg transition duration-300 flex flex-col justify-between"
           >
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">{hotel.name}</h2>
-              <p className="text-gray-600 mb-4 whitespace-pre-line">{hotel.description}</p>
+                <h2 className="text-2xl font-bold text-gray-800 mb-2">{hotel.name}</h2>
+                <p className="text-gray-600 mb-4 break-words whitespace-pre-wrap max-h-32 overflow-y-auto">
+                {hotel.description}
+                </p>
 
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-3 py-2 rounded-md">

@@ -58,7 +58,7 @@ const SignIn = () => {
             </label>
             <span className="flex items-center justify-between">
                 <span className="text-sm"> Not Registered? <Link to="/register" className="text-blue-400">Create an account here</Link></span>
-                <button type="submit" className="bg-blue-900 text-white p-2 font-bold hover:bg-blue-400 text-xl rounded-md shadow-md transition duration-200 ease-in-out">Login</button>
+                <button type="submit" className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-5 py-2 rounded-xl font-semibold shadow-md transition-all duration-200">Login</button>
             </span>
         </form>
     )
