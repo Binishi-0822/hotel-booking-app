@@ -1,4 +1,3 @@
-import HotelFormData  from './components/forms/ManageHotelForms/ManageHotelForm';
 import type { HotelType } from './../../backend/src/shared/types';
 import type { RegisterFormData } from "./pages/Register";
 import type { SignInFormData } from "./pages/SignIn";
