@@ -13,7 +13,7 @@ const EditHotel = () => {
     const navigate = useNavigate()
     
 
-    const { data: hotel, isLoading, isError, error } = useQuery<HotelType[], Error>({
+    const { data: hotel, isLoading, isError, error } = useQuery<HotelType, Error>({
         queryKey: ["fetchMyHotelById", hotelId],
         queryFn: () => apiClient.fetchMyHotelById(hotelId || ''),
         enabled: !!hotelId,
