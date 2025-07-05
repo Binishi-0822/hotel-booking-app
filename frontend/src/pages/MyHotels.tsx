@@ -44,7 +44,7 @@ const MyHotels = () => {
     <div className="px-4 md:px-10 py-10">
       <div className="flex justify-between items-center mb-8">
         <div>
-          <h1 className="text-4xl font-extrabold text-blue-900">My Hotels</h1>
+          <h1 className="text-3xl font-extrabold text-blue-900">My Hotels</h1>
           <p className="text-gray-500 mt-1">Manage and edit all your listed hotels here.</p>
         </div>
         <Link

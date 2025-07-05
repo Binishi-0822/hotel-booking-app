@@ -43,6 +43,10 @@ app.get("/", (req, res) => {
   res.send("Hello! Your backend is working 🎉");
 });
 
+app.delete("/api/my-hotels/:id", (req: Request, res: Response) => {
+  console.log("##########");
+  res.send("OK");
+});
 
 app.use("/api/users", userRoutes)
 app.use("/api/auth", authRoutes)

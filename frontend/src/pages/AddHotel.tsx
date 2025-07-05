@@ -19,6 +19,8 @@ const AddHotel = () => {
         }
     });
 
+    
+
     const handleSave = (HotelFormData: FormData) => {
         mutate(HotelFormData);
     }
