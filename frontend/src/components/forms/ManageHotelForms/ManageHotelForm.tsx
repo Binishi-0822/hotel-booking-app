@@ -59,10 +59,13 @@ const ManageHotelForm = ({onSave, hotel}: Props) => {
       });
     }
 
+    if(formDataJson.imageFiles){
+      Array.from(formDataJson.imageFiles).forEach((imageFile) => {
+        formData.append(`imagesFiles`,imageFile);
+      });
+    }
 
-    Array.from(formDataJson.imageFiles).forEach((imageFile) => {
-      formData.append(`imagesFiles`,imageFile);
-    });
+    
     onSave(formData)
   })
 
